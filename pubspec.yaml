@@ -76,7 +76,7 @@ flutter:
   # example:
 fonts:
   - family: Nunito # font family name istedigimiz ismi verebiliriz.
-      fonts:
+    fonts:
         - asset: assets/fonts/Nunito-Regular.ttf # font dosyamızın yolunu belirtiyoruz.
         - asset: assets/fonts/Nunito-Bold.ttf # font dosyamızın yolunu belirtiyoruz.
           weight: 700 # font ağırlığını belirtiyoruz.
