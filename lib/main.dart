@@ -10,9 +10,6 @@ void main() {
 class Uygulamam extends StatelessWidget {
   const Uygulamam({super.key});
 
-
-
-
 // build metodu, görsel tasarımın oluşturulduğu yerdir.
 
 //Android ve iOS için farklı tasarımlar oluşturabilir.
@@ -21,9 +18,14 @@ class Uygulamam extends StatelessWidget {
 // MaterialApp, uygulamanın genel temasını belirler.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        body: Text('Merhaba Dünya!'),
+        body: Column(
+          children: [
+            const Text('Merhaba Dünya!'),
+            Image.asset('assets/images/logo.png', width: 200, height: 200),
+          ],
+        ),
       ),
     );
   }
