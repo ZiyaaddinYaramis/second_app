@@ -22,13 +22,19 @@ class Uygulamam extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Second App - AppBar'),
+          centerTitle: true,
+          backgroundColor: Colors.blueGrey,
         ),
         body: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center, // Dikeyde ortalama
+            crossAxisAlignment: CrossAxisAlignment.center, // Yatayda ortalama
             children: [
               const Text('Merhaba Dünya!'),
+              const SizedBox(height: 100), // Boşluk bırakır
               Image.asset('assets/images/logo.png', width: 200, height: 200),
-              Text('It\'s time to learn Flutter!'),
+              const SizedBox(height: 100), // Boşluk bırakır
+              const Text('It\'s time to learn Flutter!'),
             ],
           ),
         ),
